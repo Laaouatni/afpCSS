@@ -155,8 +155,8 @@ header {
 
 #corsi {
     background-color: var(--afp-light-blue);
-    margin-bottom: 100vh;
-    /* for testing */
+    border-radius: 1vw;
+    box-shadow: 0 0 1em var(--afp-light-blue);
 }
 
 #corsi-header {
@@ -410,7 +410,7 @@ svg {
         font-size: 5vw;
     }
     .div-sedi {
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
 }
 

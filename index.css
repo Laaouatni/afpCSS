@@ -155,11 +155,13 @@ header {
 
 #corsi {
     background-color: var(--afp-light-blue);
+    margin-bottom: 100vh;
+    /* for testing */
 }
 
 #corsi-header {
     color: var(--afp-blue);
-    font-size: 2rem;
+    font-size: 4vw;
 }
 
 .center-vertical {
@@ -177,7 +179,7 @@ header {
     align-items: center;
     justify-content: space-evenly;
     color: var(--afp-blue);
-    font-size: 1.1em;
+    font-size: 1.7vw;
 }
 
 .nome-sede-afp:hover {
@@ -207,6 +209,7 @@ input[name="radio-sedi-afp"]:checked~span {
 svg {
     height: 3em;
     aspect-ratio: auto;
+    margin: 0.2vw;
 }
 
 #corsi-container {
@@ -277,6 +280,15 @@ svg {
 
 .off {
     display: none !important;
+}
+
+.corsi-div:hover div {
+    filter: blur(1vh);
+}
+
+.corsi-div>div:hover,
+.corsi-div>div>div {
+    filter: blur(0) !important;
 }
 
 @media (max-width: 900px) {
@@ -353,7 +365,7 @@ svg {
         height: auto;
         color: white;
         right: 0;
-        transform: translateX(-1.2em) translateY(0.9em);
+        transform: translateX(-1em) translateY(0.3em);
         transition-duration: 0.3s;
     }
     input[id="checkbox-menu"]:checked~nav a {
@@ -378,6 +390,27 @@ svg {
         opacity: 0.7;
         color: rgb(169, 59, 0);
         transition-duration: 0.3s;
+    }
+    #uno-corsi-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+    #due-corsi-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    #tre-corsi-div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    #corsi-container {
+        font-size: 4vw;
+    }
+    .div-sedi {
+        font-size: 2.5vw;
     }
 }
 

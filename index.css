@@ -161,7 +161,7 @@ header {
 
 #corsi-header {
     color: var(--afp-blue);
-    font-size: 6vw;
+    font-size: 3vw;
 }
 
 .center-vertical {
@@ -291,6 +291,30 @@ svg {
     filter: blur(0) !important;
 }
 
+#btn-corsi-div {
+    display: grid;
+    place-content: center;
+}
+
+#btn-corsi-div a {
+    font-size: 1.3vw;
+    border-radius: 5vw;
+    border: 0.5vw solid var(--afp-blue);
+    padding: 1vw 2vw;
+    color: var(--afp-blue);
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 2em;
+    transition-duration: 0.2s;
+}
+
+#btn-corsi-div a:hover {
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+    color: white;
+    background-color: var(--afp-blue);
+}
+
 @media (max-width: 900px) {
     .nav-links {
         font-size: 0.8em;
@@ -303,6 +327,9 @@ svg {
         flex-wrap: wrap;
         flex-direction: column-reverse;
         justify-content: center;
+    }
+    #corsi-header {
+        font-size: 4vw;
     }
 }
 
@@ -355,6 +382,9 @@ svg {
 }
 
 @media (max-width: 550px) {
+    #corsi-header {
+        font-size: 5vw;
+    }
     .nav-links {
         display: none;
     }
@@ -411,6 +441,10 @@ svg {
     }
     .div-sedi {
         font-size: 4vw;
+    }
+    #btn-corsi-div a {
+        font-size: 4vw;
+        border-width: 1vw;
     }
 }
 

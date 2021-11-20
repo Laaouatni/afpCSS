@@ -5,6 +5,7 @@
     --afp-blue: #005c85;
     --afp-light-blue: #e7e7e7;
     --afp-cyan: #379aa7;
+    --afp-black: #3c3950;
 }
 
 html {
@@ -113,6 +114,7 @@ header {
 
 #storia-image {
     height: 15em;
+    filter: drop-shadow(0 0.3em 5em rgb(255, 255, 255));
     animation: img-move 1s ease-out;
     transition-duration: 0.2s;
 }
@@ -300,7 +302,7 @@ svg {
     font-size: 1.3vw;
     border-radius: 5vw;
     border: 0.5vw solid var(--afp-blue);
-    padding: 1vw 2vw;
+    padding: 1vw 3vw;
     color: var(--afp-blue);
     text-decoration: none;
     font-weight: bold;
@@ -313,11 +315,162 @@ svg {
     transition-duration: 0.3s;
     color: white;
     background-color: var(--afp-blue);
+    animation-delay: 0.2s !important;
+    animation: gradient-blue 5s ease-in infinite;
+}
+
+@keyframes gradient-blue {
+    0% {
+        background: linear-gradient(250deg, transparent, var(--afp-blue));
+        background-size: 600% 600%;
+        background-position: 0% 51%;
+    }
+    50% {
+        background: linear-gradient(250deg, transparent, var(--afp-blue));
+        background-size: 600% 600%;
+        background-position: 100% 50%;
+        color: var(--afp-blue);
+    }
+    100% {
+        background: linear-gradient(250deg, transparent, var(--afp-blue));
+        background-size: 600% 600%;
+        background-position: 0% 51%
+    }
+}
+
+#servizi {
+    margin: 1vw;
+}
+
+#servizi-header {
+    color: var(--afp);
+    font-size: 2em;
+    text-shadow: 0 0 2em var(--afp);
+    z-index: 1;
+}
+
+.titolo-servizio {
+    color: var(--afp-black);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.div-svg-servizio {
+    color: var(--afp-black);
+    margin: 1em;
+}
+
+.titolo-svg-container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr auto;
+}
+
+.card-servizio div p {
+    font-weight: 500;
+    opacity: 0.7;
+    font-size: 1.3vw;
+}
+
+.card-servizio {
+    border-radius: 0.5em;
+    box-shadow: 0 0 2em white;
+    background-color: white;
+    margin-bottom: 1em;
+    padding: 0 1em;
+    transition-duration: 0.2s;
+    min-height: 20vh;
+}
+
+#all-servizi-div {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#servizi div {
+    display: grid;
+    place-content: center;
+}
+
+.card-servizio:hover {
+    transition-duration: 0.2s;
+    background-color: var(--afp-cyan);
+    color: white;
+    transform: translateY(-1em) scale(1.05);
+    border-radius: 1em;
+    box-shadow: 0 1em 10em var(--afp-cyan);
+}
+
+.card-servizio:hover>div div {
+    transition-duration: 0.2s;
+    color: white;
+    text-shadow: 0 0 1.5em white;
+}
+
+.card-servizio:hover>div div svg {
+    transition-duration: 0.2s;
+    color: white;
+    filter: drop-shadow(0 0 1.5em white);
+}
+
+.card-servizio>div div {
+    transition-duration: 0.2s;
+}
+
+.card-servizio:hover>div p {
+    transition-duration: 0.2s;
+    color: white;
+    opacity: 1;
+    min-width: 100%;
+}
+
+.card-servizio>div p {
+    transition-duration: 0.2s;
+}
+
+#all-servizi-div:hover div {
+    filter: blur(0.3vh);
+}
+
+#all-servizi-div>div:hover,
+#all-servizi-div>div div {
+    filter: blur(0) !important;
+}
+
+.div-paragrafo-servizio {
+    display: flex !important;
+    align-items: flex-start;
+}
+
+@media (min-width: 1500px) {
+    #all-servizi-div {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+    .card-servizio {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+@media (min-width: 800px) {
+    #all-servizi-div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card-servizio {
+        margin: 1em;
+    }
 }
 
 @media (max-width: 900px) {
     .nav-links {
         font-size: 0.8em;
+    }
+    .card-servizio div p {
+        font-size: 2vw;
     }
 }
 
@@ -378,6 +531,9 @@ svg {
     }
     #div-storia {
         margin: 1em;
+    }
+    .card-servizio div p {
+        font-size: 2.5vw;
     }
 }
 
@@ -445,6 +601,9 @@ svg {
     #btn-corsi-div a {
         font-size: 4vw;
         border-width: 1vw;
+    }
+    .card-servizio div p {
+        font-size: 3vw;
     }
 }
 

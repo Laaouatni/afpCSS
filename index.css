@@ -378,7 +378,7 @@ svg {
     background-color: white;
     margin-bottom: 1em;
     padding: 0 1em;
-    transition-duration: 0.2s;
+    transition-duration: 0.5s;
     min-height: 20vh;
 }
 
@@ -398,9 +398,9 @@ svg {
     transition-duration: 0.2s;
     background-color: var(--afp-cyan);
     color: white;
-    transform: translateY(-1em) scale(1.05);
+    transform: translateY(-1em);
     border-radius: 1em;
-    box-shadow: 0 1em 10em var(--afp-cyan);
+    box-shadow: 0 1em 5em var(--afp-cyan);
 }
 
 .card-servizio:hover>div div {

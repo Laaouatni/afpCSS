@@ -1,2 +1,2 @@
 # test
-[laaouatni.github.io/test](https://laaouatni.github.io/test)
+[laaouatni.github.io/afp](https://laaouatni.github.io/afp)

@@ -444,6 +444,122 @@ svg {
     align-items: flex-start;
 }
 
+hr {
+    opacity: 0.3;
+    margin: 1em 25%;
+    color: white;
+}
+
+#contattaci {
+    margin: 1em;
+}
+
+#contatti-header {
+    color: var(--afp);
+    font-size: 2em;
+    text-shadow: 0 0 2em var(--afp);
+}
+
+.maps-iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    max-height: 50vh;
+    border-radius: 1em;
+}
+
+#form-maps-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#contattaci-form {
+    margin: 1em;
+}
+
+#contattaci-form input {
+    width: 100%;
+}
+
+.nome-cognome-div {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+}
+
+#messaggio {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+label span.required::after {
+    content: "*";
+    margin-left: 3px;
+    color: var(--afp-cyan);
+}
+
+input:hover,
+textarea:hover {
+    transition-duration: 0.3s;
+    border-radius: 0.7em;
+}
+
+input[type="submit"] {
+    transition-duration: 0.5s;
+    color: var(--afp-blue);
+    margin-top: 1em !important;
+}
+
+input[type="submit"]:hover {
+    color: white;
+    background: linear-gradient(to left, rgba(0, 164, 228, 1), rgb(13, 0, 255));
+    background-repeat: no-repeat;
+    transition-duration: 0.5s;
+    border-radius: 2em;
+    font-weight: 500;
+    height: 60px;
+    font-size: 1.2em;
+}
+
+#contattaci-form div label,
+#contattaci-form div div label {
+    font-weight: 400;
+    font-size: 1vw;
+    padding: 0.2em;
+}
+
+input[type],
+textarea {
+    width: 100%;
+    margin: auto;
+    height: 3em;
+    overflow-x: auto;
+}
+
+input {
+    border-radius: 5px;
+    border: 2px solid #fff;
+    transition-duration: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
+
+textarea {
+    border-radius: 5px;
+    transition-duration: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    border: 0px solid #fff;
+    height: 5em !important;
+}
+
+.tel-sede-info span::before {
+    content: "+39 ";
+}
+
+.fax-sede-info span::before {
+    content: "Fax: ";
+}
+
 @media (min-width: 1500px) {
     #all-servizi-div {
         display: grid;
@@ -452,6 +568,24 @@ svg {
     .card-servizio {
         display: grid;
         grid-template-rows: 1fr 1fr;
+    }
+    #contattaci-form div label,
+    #contattaci-form div div label {
+        font-size: 0.6vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    #form-maps-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #contattaci {
+        margin-right: 0em !important;
+    }
+    #form-container {
+        place-content: center;
+        display: grid;
     }
 }
 
@@ -470,6 +604,10 @@ svg {
         font-size: 0.8em;
     }
     .card-servizio div p {
+        font-size: 2vw;
+    }
+    #contattaci-form div label,
+    #contattaci-form div div label {
         font-size: 2vw;
     }
 }
@@ -604,6 +742,10 @@ svg {
     }
     .card-servizio div p {
         font-size: 3vw;
+    }
+    #contattaci-form div label,
+    #contattaci-form div div label {
+        font-size: 2.5vw;
     }
 }
 

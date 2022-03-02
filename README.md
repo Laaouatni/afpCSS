@@ -1,5 +1,5 @@
 # AFP SV EDU Clone
-[laaouatni.github.io/afp](https://laaouatni.github.io/afpCSS)
+[laaouatni.github.io/afpCSS](https://laaouatni.github.io/afpCSS)
 
 
 

@@ -36,9 +36,9 @@
 
 ### there is three options. (onclick of NAME_CITY link)
 <div style="display:flex;">
-<img style="width: 33%;" src="https://user-images.githubusercontent.com/87947051/145719683-b51016c4-7ce9-437c-a976-513454ed96d3.png">
-<img style="width: 33%;" src="https://user-images.githubusercontent.com/87947051/145719687-3f75890d-6c21-43dc-90da-7efb5b94a5c9.png">
-<img style="width: 33%;" src="https://user-images.githubusercontent.com/87947051/145719968-caec1971-ab61-401e-947a-f59dba959e21.png">
+<img style="width: 30%;" src="https://user-images.githubusercontent.com/87947051/145719683-b51016c4-7ce9-437c-a976-513454ed96d3.png">
+<img style="width: 30%;" src="https://user-images.githubusercontent.com/87947051/145719687-3f75890d-6c21-43dc-90da-7efb5b94a5c9.png">
+<img style="width: 30%;" src="https://user-images.githubusercontent.com/87947051/145719968-caec1971-ab61-401e-947a-f59dba959e21.png">
 </div>
 
 ### another cards:
@@ -54,3 +54,7 @@
 #### — section: contattaci
 ##### hover
 ![afp patronato san vincenzo](https://user-images.githubusercontent.com/87947051/145721183-f8aeea09-3741-4f36-8bc1-29b78efd1a5e.png)
+
+![](https://visitor-badge.glitch.me/badge?page_id=afPCSS)
+
+
